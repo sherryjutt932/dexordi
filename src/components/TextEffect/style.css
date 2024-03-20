@@ -1,0 +1,23 @@
+.TextEffect{
+    position: relative;
+    overflow: hidden;
+    cursor:default;
+}
+
+.TextEffect .secondText{
+    position: absolute;
+    left: 0%;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+}
+
+.TextEffect .firstText,
+.TextEffect .secondText{
+	transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.TextEffect:hover .firstText,
+.TextEffect:hover .secondText{
+    transform: translateY(100%);
+}

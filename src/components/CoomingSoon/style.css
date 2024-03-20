@@ -1,0 +1,71 @@
+ .popupCS{
+    position: fixed;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: 0 0 60vw 1vw #000;
+    background-color: #11141D;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+    padding: 2rem;
+    border-radius: 20px;
+    z-index: 300;
+}
+
+ .popupCS .csAnim{
+    width: max(35vw, 300px);
+    height: auto;
+}
+
+ .popupCS h1{
+    color: #FFF;
+    text-align: center;
+    width: max(45vw, 400px);
+    font-size: max(min(4vw, 30px), 2rem);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+}
+
+ .popupCS .popupBtnClose{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    margin: 0.6rem;
+    height: fit-content;
+    background-color: transparent;
+    padding: 0.5rem;
+    font-size: 2rem;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+ .popupCS .popupBtnClose:hover{
+    color: #e05708;
+}
+
+@media (max-width:750px) {
+    .popupCS{
+        width: 90vw;
+    }
+
+    .popupCS h1{
+        width: 100%;
+    }
+
+    .popupCS .csAnim{
+        width: 80%;
+    }
+    
+}

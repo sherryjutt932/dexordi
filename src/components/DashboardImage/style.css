@@ -1,0 +1,100 @@
+.DashboardImage .Wrapper {
+  display: flex;
+  margin: 100px 0;
+  padding-top: 12%;
+  position: relative;
+}
+
+.DashboardImage .Wrapper .bg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 345px;
+  height: 345px;
+  flex-shrink: 0;
+  border-radius: 345px;
+  background: #f35f0ad4;
+  filter: blur(183.6999969482422px);
+}
+
+.DashboardImage .detailCon {
+  flex-grow: 1;
+  color: #fff;
+  text-align: right;
+  font-size: 72.368px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.DashboardImage .detailCon .effect {
+  display: flex;
+  align-items: center;
+  gap: 0.3ch;
+  justify-content: flex-end;
+}
+
+.DashboardImage .detailCon span {
+  color: #f35e0a;
+  font-weight: 700;
+}
+
+.DashboardImage .imgCon {
+  position: relative;
+  flex-shrink: 0;
+  width: 40%;
+  height: fit-content;
+  min-height: 150px;
+  margin-right: 12vw;
+  margin-top: 30px;
+}
+
+.DashboardImage .imgCon iframe {
+  border-radius: 25px;
+  box-shadow: 0px 4px 43px 0px rgba(0, 0, 0, 0.25);
+  background-color: #000;
+  padding: 12px;
+}
+
+@media (max-width: 750px) {
+  .DashboardImage .Wrapper {
+    flex-direction: column;
+  }
+
+  .DashboardImage .imgCon {
+    width: 100%;
+    margin-right: 0;
+    min-height: 0px;
+    margin-bottom: 30px;
+}
+
+.DashboardImage .imgCon iframe{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+  }
+
+  .DashboardImage .detailCon {
+    font-size: 46px;
+  }
+
+  .DashboardImage .detailCon .effect {
+    justify-content: center;
+  }
+
+  .DashboardImage .detailCon img{
+    display: block;
+    width: 2rem;
+    margin-left: 0;
+    transform: rotate(90deg);
+    margin-bottom: 0.5rem;
+}
+
+  
+}

@@ -1,0 +1,226 @@
+.WhyDex {
+  padding: 100px 0;
+  gap: 100px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.WhyDex .bg {
+  width: 506px;
+  height: 506px;
+  flex-shrink: 0;
+  border-radius: 506px;
+  background: #f35f0ad4;
+  filter: blur(269.4266662597656px);
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  transform: translate(50%, 100%);
+}
+
+.WhyDex .content {
+  width: 100%;
+}
+
+.WhyDex .group {
+  display: flex;
+  width: 100%;
+  color: #fff;
+  justify-content: space-between;
+}
+
+.WhyDex .content:nth-child(odd) .group {
+  flex-direction: row-reverse;
+}
+
+.WhyDex .content .group .detailCon {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding-top: 1vw;
+}
+
+.WhyDex .content .group .detailCon h1 {
+  color: #fff;
+  font-size: max(min(8vw, 154px), 2.6rem);
+  font-style: normal;
+  font-weight: 900;
+  line-height: 0%;
+  text-transform: uppercase;
+  white-space: nowrap;
+  position: absolute;
+  left: 50%;
+  top: -3.5vw;
+  transform: translate(-50%, -50%);
+}
+
+.WhyDex .content .group .detailCon p {
+  color: #fff;
+  text-align: center;
+  font-size: max(min(8vw, 50px), 2.6rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 160% */
+}
+
+.WhyDex .slider {
+  display: flex;
+  flex-wrap: nowrap;
+  width: fit-content;
+}
+
+.WhyDex .slider .card {
+  padding: 2rem 3rem !important;
+  border-radius: 25px !important;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 21vw;
+  min-width: 300px;
+  margin: 10px;
+}
+
+.WhyDex .slider .card .anim{
+  display: block;
+  width: 80%;
+  margin-top: auto;
+  margin-bottom: 40px;
+}
+
+.WhyDex .slider .card img {
+  display: block;
+  width: 80%;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+.WhyDex .slider .card h2 {
+  margin-top: auto;
+  color: #fff;
+  text-align: center;
+  font-family: League Spartan;
+  font-size: 32px;
+  letter-spacing: 0.2ch;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.WhyDex .slider .card p {
+  color: #F35E0A;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33.833px; /* 144.118% */
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.WhyDex .slider .card .cart {
+  background-color: #F35E0A;
+  color: #fff;
+  font-size: 1.4rem;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -5px;
+}
+
+.WhyDexMarqueeWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.WhyDexMarqueeWrapper .WhyDexMarqueeCon {
+  height: 100%;
+  position: relative;
+}
+.WhyDexMarqueeWrapper .WhyDexMarqueeCon .WhyDexMarqueeDiv {
+  height: 100%;
+}
+.WhyDexMarqueeWrapper .WhyDexMarqueeCon .WhyDexMarqueeDiv2 {
+  height: 100%;
+  position: absolute;
+  left: 100%;
+  top: 0%;
+}
+
+@media (max-width: 750px) {
+  .WhyDex {
+    padding: 50px 0;
+    gap: 50px;
+  }
+
+  .WhyDex .slider .card .cart {
+    font-size: 1rem;
+    border-radius: 4px;
+    width: 30px;
+    height: 30px;
+    margin-top: -5px;
+  }
+
+  .WhyDex .slider .card {
+    padding: 2rem 1rem !important;
+    border-radius: 25px !important;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 250px;
+    min-width: 250px;
+    margin: 10px;
+  }
+
+  .WhyDex .slider .card .anim{
+    display: block;
+    width: 60%;
+    margin-bottom: 10px;
+  }
+
+  .WhyDex .slider .card img {
+    display: block;
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .WhyDex .slider .card h2 {
+    font-size: 30px;
+  }
+
+  .WhyDex .content .group .detailCon h1 {
+    font-size: max(12vw, 2.6rem);
+    top: -6.5vw;
+  }
+
+  .WhyDex .slider .card p{
+    font-size: 30px;
+    line-height: 26px; /* 144.118% */
+  }
+
+  .WhyDex .content .group .detailCon p {
+    font-size: 30px;
+  }
+}

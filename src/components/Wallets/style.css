@@ -1,0 +1,117 @@
+.wallets {
+  padding: 100px 0;
+  position: relative;
+}
+
+.wallets .bg {
+  border-radius: 380px;
+  background: #f35f0ad4;
+  filter: blur(269.4266662597656px);
+  width: 380px;
+  height: 380px;
+  flex-shrink: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.wallets .content h1 {
+  color: #fff;
+  text-align: center;
+  font-size: max(min(7vw, 123px), 2.2rem);
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.wallets .content h1 span {
+  color: #f35e0a;
+}
+
+.wallets .content p {
+  color: rgba(255, 255, 255, 0.49);
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 1rem;
+  line-height: 40px; /* 133.333% */
+}
+
+.wallets .content small {
+  color: rgba(255, 255, 255, 0.49);
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 40px; /* 266.667% */
+}
+
+.wallets .cardContainer {
+  margin: 100px 140px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.wallets .cardContainer .WalletCard {
+  padding: 10px 40px;
+  min-height: 190px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.06);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wallets .cardContainer .WalletCard .imgCon {
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 0%;
+  overflow: hidden;
+}
+
+.wallets .cardContainer .WalletCard .imgCon img {
+  position: relative;
+  left: -14px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 750px) {
+  .wallets {
+    padding: 100px 0;
+  }
+
+  .wallets .content p {
+    font-size: 18px;
+    line-height: 26px; /* 133.333% */
+  }
+
+  .wallets .cardContainer {
+    margin: 50px 24px;
+  }
+
+  .wallets .cardContainer .WalletCard {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .wallets .cardContainer .WalletCard h2 {
+    font-size: 24px;
+    line-height: 28px; /* 114.815% */
+  }
+
+  .wallets .cardContainer .WalletCard p {
+    font-size: 16px;
+    line-height: 24px; /* 133.333% */
+  }
+}

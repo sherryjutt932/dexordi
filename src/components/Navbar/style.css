@@ -1,0 +1,167 @@
+nav.abs{
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    z-index: 100;
+}
+
+nav.abs .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.abs .content .logo{
+    display: block;
+    height: 120px;
+    width: auto;
+    mix-blend-mode: multiply;
+}
+
+nav.abs .content .mainlogo{
+    height: 90px;
+    margin: 10px 0;
+}
+
+nav.abs .content .navitems{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    
+    color: #FFF;
+    font-size: 22.861px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    
+}
+
+    nav.abs .content .navitems a{
+        color: #FFF;
+        text-decoration: none;
+        cursor: pointer;
+       transition: all 0.5s ease;
+    }
+ 
+    nav.abs .content .navitems a:hover,
+    nav.abs .content .navitems a:focus{
+        color: #e05708;
+    }
+   
+    nav.abs .content .icons{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+   
+
+    nav.abs .content .icons img{
+       height: 1.5rem;
+       width: auto;
+        display: block;
+    }
+   
+    nav.abs .content .icons a{
+        transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+   
+    nav.abs .content .icons a:hover{
+       transform: scale(1.2);
+    }
+    
+    nav.abs .content .menuBtn{
+        display: none;
+    }
+    
+   
+    nav.abs .Sidebar{
+        box-shadow: 2px 0px 30px 1px #00000060;
+        position: fixed;
+        z-index: 200;
+        width: 300px;
+        height: 100vh;
+        background: #11141D;
+        top: 0;
+        left: -300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: all 0.5s ease;
+    }
+
+    nav.abs .Sidebar .head{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 20px;
+        margin-bottom: 50px;
+    }
+    
+    nav.abs .Sidebar .head .menuBtnClose{
+        display: block;
+        margin-top: 1rem;
+        height: fit-content;
+        background-color: transparent;
+        padding: 0.5rem;
+        font-size: 2rem;
+        color: #fff;
+        border: none;
+        outline: none;
+    }
+    
+    nav.abs .Sidebar .logo{
+        width: 150px;
+        margin-top: 10px;
+    }
+    
+    nav.abs .Sidebar .navitems{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+    }
+    
+    nav.abs .Sidebar .navitems a{
+        background-color: #ffffff10;
+        padding: 0.8rem 1rem;
+        border-radius: 6px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+    }
+    
+    nav.abs .Sidebar .icons{
+        margin-top: auto;        
+        margin-bottom: 20px;        
+        padding: 20px;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+
+@media (max-width: 750px) {
+    nav.abs .content .logo{
+        height: 80px;
+        margin: 1rem 0;
+    }
+
+    nav.abs .content .navitems {
+        display: none;
+    }
+    nav.abs .content .icons{
+        display: none;
+    }
+    nav.abs .content .menuBtn{
+        display: block;
+        margin-top: 0rem;
+        height: fit-content;
+        background-color: transparent;
+        padding: 0.5rem;
+        font-size: 2rem;
+        color: #fff;
+        border: none;
+        outline: none;
+    }
+}
