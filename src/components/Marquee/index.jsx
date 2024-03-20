@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import ArrayData from "./Data";
-import "./Marquee.css";
+import "./Marquee.css"
 import { gsap } from "gsap";
 
 export default function Marquee({ direction, speed, ...props }) {
@@ -13,10 +13,7 @@ export default function Marquee({ direction, speed, ...props }) {
     if (xPercent > 0) {
       xPercent = -100;
     }
-    gsap.to([first.current, second.current], {
-      xPercent: xPercent,
-      duration: 0,
-    });
+    gsap.to([first.current, second.current], { xPercent: xPercent, duration: 0 });
     requestAnimationFrame(rightAnimation);
     xPercent += speed / 10;
   };
@@ -25,10 +22,7 @@ export default function Marquee({ direction, speed, ...props }) {
     if (xPercent < -100) {
       xPercent = 0;
     }
-    gsap.to([first.current, second.current], {
-      xPercent: xPercent,
-      duration: 0,
-    });
+    gsap.to([first.current, second.current], { xPercent: xPercent, duration: 0 });
     requestAnimationFrame(leftAnimation);
     xPercent -= speed / 10;
   };
@@ -41,22 +35,29 @@ export default function Marquee({ direction, speed, ...props }) {
     }
   }, [direction]);
 
+
   return (
     <section className="marqueeSec">
       <div ref={marquee} className="marqueeCon">
-        <div className="marqueeDiv" ref={first}>
-          {ArrayData.map((item, index) => (
-            <div key={index}>
-              {item.title}<br />
-              <small>{item.detail}</small>
-            </div>
-          ))}
+        <div
+          className="marqueeDiv"
+          ref={first}
+        >
+          {
+            ArrayData.map((item, index) => (
+              <div key={index}>
+                {item}
+              </div>
+            ))
+          }
         </div>
-        <div ref={second} className="marqueeDiv2">
+        <div
+          ref={second}
+          className="marqueeDiv2"
+        >
           {ArrayData.map((item, index) => (
             <div key={index}>
-              {item.title} <br />
-              <small>{item.detail}</small>
+              {item}
             </div>
           ))}
         </div>

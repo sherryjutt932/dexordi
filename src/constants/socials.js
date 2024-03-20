@@ -1,7 +1,9 @@
 const socialMediaLinks = {
-    discord: "https://discord.com/invite/xVy6y53ka4",
-    tebex: "https://ultrashieldanticheat.tebex.io/",
-    youtube: "hhttps://www.youtube.com/channel/UCKYd9vQLVi4Zie1k9E14WvQ",
+    twitter: "https://twitter.com/dexordi",
+    telegram: "https://t.co/KqSaHkllkH",
+    discord: "https://discord.gg/ES75tKQg94",
+    gitbook: "https://dexordi.gitbook.io/docs/",
+    medium: "https://medium.com/@dexordi",
   };
   
 

@@ -17,11 +17,7 @@ nav.abs .content .logo{
     height: 120px;
     width: auto;
     mix-blend-mode: multiply;
-}
 
-nav.abs .content .mainlogo{
-    height: 90px;
-    margin: 10px 0;
 }
 
 nav.abs .content .navitems{
@@ -46,7 +42,7 @@ nav.abs .content .navitems{
  
     nav.abs .content .navitems a:hover,
     nav.abs .content .navitems a:focus{
-        color: #e05708;
+        color: #A25BFF;
     }
    
     nav.abs .content .icons{
@@ -111,8 +107,7 @@ nav.abs .content .navitems{
     }
     
     nav.abs .Sidebar .logo{
-        width: 150px;
-        margin-top: 10px;
+        width: 120px;
     }
     
     nav.abs .Sidebar .navitems{
@@ -155,7 +150,7 @@ nav.abs .content .navitems{
     }
     nav.abs .content .menuBtn{
         display: block;
-        margin-top: 0rem;
+        margin-top: 1rem;
         height: fit-content;
         background-color: transparent;
         padding: 0.5rem;

@@ -1,7 +1,7 @@
 .BtnPrimary {
   border-radius: 15px;
   border: 1px solid #373737;
-  background: #F35E0A;
+  background: #9747ff;
   display: inline-flex;
   align-items: center;
   padding: 14px 25px 14px 17px;
@@ -17,7 +17,7 @@
 }
 
 .BtnPrimary:hover {
-    background: #e05708;
+    background: #7023d5;
  
 }
 

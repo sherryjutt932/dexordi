@@ -11,7 +11,7 @@
   height: 506px;
   flex-shrink: 0;
   border-radius: 506px;
-  background: #f35f0ad4;
+  background: rgba(162, 91, 255, 0.85);
   filter: blur(269.4266662597656px);
   position: absolute;
   z-index: -1;
@@ -66,7 +66,7 @@
 }
 
 .CardsSection .content .group .detailCon h1 span {
-  color: #F35E0A;
+  color: #9747ff;
   font-weight: 700;
 }
 
@@ -95,14 +95,12 @@
 
 .CardsSection .group .imgCon {
   flex-shrink: 0;
-  width: 50%;
-  aspect-ratio: 1.4;
+  width: auto;
+  height: 100%;
 }
 
-.CardsSection .group .imgCon iframe {
+.CardsSection .group .imgCon img {
   display: block;
-  outline: none;
-  border: none;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -135,7 +133,7 @@
   .CardsSection .content .group .detailCon p {
     font-size: 16px;
     line-height: 24px;
-    width: 100%;
+    width: 90%;
   }
 
   .CardsSection .content .group .detailCon {
@@ -148,14 +146,4 @@
   .CardsSection .content:nth-of-type(odd) .group .detailCon {
     padding-left: 10px;
   }
-
-  
-.CardsSection .group .imgCon {
-  width: 100%;
-  aspect-ratio: 1;
-}
-
-.CardsSection .group .imgCon iframe {
-  border-radius: 18px;
-}
 }

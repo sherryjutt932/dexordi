@@ -46,10 +46,11 @@ function App() {
       <Header />
       <DashboardImage />
       <FlyRocket />
-      <Marquee direction={"left"} speed={0.1} />
+      <Marquee direction={"left"} speed={0.2} />
       <CardsSection />
-      <WhyDex direction={"left"} speed={0.1} />
+      <WhyDex direction={"left"} speed={0.3} />
       <Wallets />
+      <FAQ />
       <Footer />
     </>
   );

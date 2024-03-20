@@ -6,12 +6,10 @@ import logo1 from "../../assets/digitalJournal.png";
 import logo2 from "../../assets/Yahoo.png";
 import logo3 from "../../assets/accesswire.png";
 import TextEffect from "../TextEffect";
-import Lottie from "react-lottie-player";
-import headerBlock from "../../assets/animation/header-block.json";
+import Lottie from 'react-lottie-player';
+import headerBlock from '../../assets/animation/header-block.json';
 import Button from "../Button";
 import qrcode from "../../assets/qr.svg";
-
-import shield from "../../assets/ULTRA_shield_transparent.png";
 
 export default function Header() {
   return (
@@ -21,37 +19,52 @@ export default function Header() {
       <div className="content">
         <div className="detailcon">
           <h1>
-            FiveM <br />
-            <span>
-              <TextEffect>UltraShield</TextEffect>
-            </span>
+            AMM & DA0 <br />
+            BASED ON <br />
+            <span><TextEffect>
+            brc20 and cbrc20 token standard
+            </TextEffect></span>
           </h1>
           <p>
-            <span>
-              Overview <br />
-            </span>
-            Elevate and safeguard your FiveM experience with UltraShield, the
-            cutting-edge anti-cheat that sets new standards in the market for
-            over 3 years.
+          DexOrdi provides a seamless and intuitive trading environment that empowers users to explore the world of decentralized trading on the Bitcoin network.
+
           </p>
 
-          <a href="https://ultrashieldanticheat.tebex.io/">
-            <Button>
-              <span className="icon">
-                <img src={qrcode} alt="" />
-              </span>
-              <span>Buy Now $15</span>
-            </Button>
+          <a href="https://unisat.io/market/brc20?tick=%24ODI" >
+          <Button>
+            <span className="icon">
+              <img src={qrcode} alt="" />
+            </span>
+            <span>
+              Buy $ODI
+            </span>
+          </Button>
           </a>
         </div>
 
-        {/* <div className="headerAnim">
-          <Lottie loop animationData={headerBlock} play />
-        </div> */}
+       <div className="headerAnim">
+       <Lottie
+      loop
+      animationData={headerBlock}
+      play
+    />
+       </div>
 
         {/* <img src={headerImage} alt="headerImage" className="headerImage" /> */}
 
-       
+        <div className="logo">
+          <a href="https://digitaljournal.com/pr/news/accesswire/dexordi-revolutionizing-decentralized-trading-on-the-bitcoin-network-with-advanced-amm-technology" target="_blank">
+            <img src={logo1} alt="logo1" />
+          </a>
+          <a target="_blank" href="https://finance.yahoo.com/news/dexordi-revolutionizing-decentralized-trading-bitcoin-121500654.html">
+            <img src={logo2} alt="logo2" />
+          </a>
+
+          <a target="_blank" href="https://www.accesswire.com/761443/DexOrdi-Revolutionizing-Decentralized-Trading-on-the-Bitcoin-Network-with-Advanced-AMM-Technology">
+            <img src={logo3} alt="logo3" />
+          </a>
+            
+        </div>
       </div>
     </header>
   );

@@ -1,5 +1,5 @@
 footer.footer{
-    border-top: 2px solid #F35E0A;
+    border-top: 2px solid #9747FF;
 background: #000;
 }
 
@@ -11,7 +11,7 @@ footer.footer .content{
 }
 
 footer.footer .content .copyright {
-    color: #e05708;
+    color: #A25BFF;
     font-family: League Spartan;
     font-size: 22.861px;
     font-style: normal;
@@ -41,7 +41,7 @@ footer.footer .content .navitems{
  
     footer.footer .content .navitems a:hover,
     footer.footer .content .navitems a:focus{
-        color: #e05708;
+        color: #A25BFF;
     }
    
     footer.footer .content .icons{

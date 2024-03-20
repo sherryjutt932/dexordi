@@ -5,9 +5,6 @@ import intelligent from "../../assets/intelligent.png";
 import selfcustody from "../../assets/self custody.png";
 import anonymous from "../../assets/anonymous.png";
 import decentralized from "../../assets/decentralized.png";
-
-import ultralogo from "../../assets/UltrashieldLogo.png";
-
 import "./style.css";
 import Lottie from 'react-lottie-player';
 
@@ -16,7 +13,6 @@ import selfcustodyAnim from "../../assets/animation/Magnifier-1.json";
 import privateAnim from "../../assets/animation/Star-1.json";
 import anonymousAnim from "../../assets/animation/Msg-1.json";
 import decentralizedAnim from "../../assets/animation/Card-1.json";
-import { FaCartShopping } from "react-icons/fa6";
 
 export default function CardsSection({direction, speed}) {
   const WhyDexMarquee = useRef();
@@ -58,40 +54,46 @@ export default function CardsSection({direction, speed}) {
 
   const cardData = [
     {
-      image: ultralogo,
-      title: "Monthly",
-      detail: "$15",
+      image: privatesvg,
+      title: "PRIVATE",
+      detail: "No data collected or stored.",
       anim: privateAnim,
     },
     {
-      image: ultralogo,
-      title: "Quarterly",
-      detail: "$35",
+      image: intelligent,
+      title: "intelligent",
+      detail: "DL API + Oracle Powered",
       anim: intelligentAnim,
     },
     {
-      image: ultralogo,
-      title: "Yearly",
-      detail: "$50",
+      image: selfcustody,
+      title: "self custody",
+      detail: "Your keys. Your coins.",
       anim: selfcustodyAnim,
     },
     {
-      image: ultralogo,
-      title: "LifeTime",
-      detail: "$80",
+      image: anonymous,
+      title: "anonymous",
+      detail: "No KYC.",
       anim: anonymousAnim,
     },
-   
+    {
+      image: decentralized,
+      title: "decentralized",
+      detail: "No humans.",
+      anim: decentralizedAnim,
+    },
   ];
   return (
-    <div className="WhyDex" id="Prices">
+    <div className="WhyDex">
       <div className="bg"></div>
       <div className="content">
-        <div className="group mountAnimBelow">
+        <div className="group card mountAnimBelow">
           <div className="detailCon">
-            <h1>Choose</h1>
+            <h1>why dexordi</h1>
             <p>
-            Your Duration
+            Dexordi recognizes the challenges faced by decentralized trading on the Bitcoin network and has
+            positioned itself as a pioneer in addressing these issues. By leveraging advanced Automated Market Maker (AMM) technology, Deep Lake API, Oracle and the BRC-20/CBRC-20 token standard, Dexordi aims to revolutionize decentralized trading and unlock the full potential of the Bitcoin network.
             </p>
           </div>
         </div>
@@ -103,20 +105,16 @@ export default function CardsSection({direction, speed}) {
             {cardData.concat(cardData).map((item, index) => {
               return (
                 <div key={index} className="card">
-                  {/* <Lottie
+                  <Lottie
                     loop
                     animationData={item.anim}
                     play
                     className="anim"
-                  /> */}
+                  />
 
-                  <img src={item.image} alt={item.title} />
+                  {/* <img src={item.image} alt={item.title} /> */}
                   <h2>{item.title}</h2>
-                  <p>
-                    <span>{item.detail}</span>
-                     <a href="https://ultrashieldanticheat.tebex.io/" target="_blank" className="cart">
-                  <FaCartShopping />
-                    </a></p>
+                  <p>{item.detail}</p>
                 </div>
               );
             })}
@@ -125,19 +123,15 @@ export default function CardsSection({direction, speed}) {
             {cardData.concat(cardData).map((item, index) => {
               return (
                 <div key={index} className="card">
-                  {/* <Lottie
+                  <Lottie
                     loop
                     animationData={item.anim}
                     play
                     className="anim"
-                  /> */}
-                  <img src={item.image} alt={item.title} />
+                  />
+                  {/* <img src={item.image} alt={item.title} /> */}
                   <h2>{item.title}</h2>
-                  <p>
-                  <span>{item.detail}</span>
-                  <a href="https://ultrashieldanticheat.tebex.io/" target="_blank" className="cart">
-                  <FaCartShopping />
-                    </a></p>
+                  <p>{item.detail}</p>
                 </div>
               );
             })}

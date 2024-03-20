@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "./style.css";
-import Logo from "../../assets/UltrashieldLogo.png";
+import Logo from "../../assets/Logo-Dexordi.png";
 import CoomingSoon from "../CoomingSoon";
-
-import tebex from "../../assets/logos/tebex.png";
-import youtube from "../../assets/logos/youtube.png";
+import twitter from "../../assets/logos/twitter.png";
+import telegram from "../../assets/logos/telegram.png";
 import discord from "../../assets/logos/discord.png";
-
+import medium from "../../assets/logos/m.png";
+import gitbook from "../../assets/logos/book.png";
 import { IoMdMenu } from "react-icons/io";
 import { RxCross1 } from "react-icons/rx";
 import socials from "../../constants/socials";
@@ -34,30 +34,34 @@ export default function Navbar() {
     <nav className="abs">
       <div className="content">
         <a href="/">
-          <img src={Logo} alt="Logo" className="logo mainlogo" />
+          <img src={Logo} alt="Logo" className="logo" />
         </a>
         <div className="navitems">
           <a href="/">Home</a>
           <span>●</span>
-          <a href="#Features">Features</a>
+          <a onClick={handlePopup}>Exchange</a>
           <span>●</span>
-          <a href="#Support">Support</a>
+          <a onClick={handlePopup}>Launchpad</a>
           <span>●</span>
-          <a href="#Prices">Prices</a>
+          <a onClick={handlePopup}>Cybord Pool</a>
         </div>
-
         <div className="icons">
+          <a target="_blank" href={socials.twitter}>
+            <img src={twitter} alt="twitter" />
+          </a>
+          <a target="_blank" href={socials.telegram}>
+            <img src={telegram} alt="telegram" />
+          </a>
           <a target="_blank" href={socials.discord}>
             <img src={discord} alt="discord" />
           </a>
-          <a target="_blank" href={socials.tebex}>
-            <img src={tebex} alt="gitbook" />
+          <a target="_blank" href={socials.gitbook}>
+            <img src={gitbook} alt="gitbook" />
           </a>
-          <a target="_blank" href={socials.youtube}>
-            <img src={youtube} alt="medium" />
+          <a target="_blank" href={socials.medium}>
+            <img src={medium} alt="medium" />
           </a>
         </div>
-
         <button onClick={handleOpenMenuClick} className="menuBtn">
           <IoMdMenu />
         </button>
@@ -77,23 +81,27 @@ export default function Navbar() {
         </div>
         <div className="navitems">
           <a href="/">Home</a>
-          <a href="#Features">Features</a>
-          <a href="#Support">Support</a>
-          <a href="#Prices">Prices</a>
+          <a onClick={handlePopup}>Exchange</a>
+          <a onClick={handlePopup}>Launchpad</a>
+          <a onClick={handlePopup}>Cybord Pool</a>
         </div>
-        
-         <div className="icons">
+        <div className="icons">
+          <a target="_blank" href={socials.twitter}>
+            <img src={twitter} alt="twitter" />
+          </a>
+          <a target="_blank" href={socials.telegram}>
+            <img src={telegram} alt="telegram" />
+          </a>
           <a target="_blank" href={socials.discord}>
             <img src={discord} alt="discord" />
           </a>
-          <a target="_blank" href={socials.tebex}>
-            <img src={tebex} alt="gitbook" />
+          <a target="_blank" href={socials.gitbook}>
+            <img src={gitbook} alt="gitbook" />
           </a>
-          <a target="_blank" href={socials.youtube}>
-            <img src={youtube} alt="medium" />
+          <a target="_blank" href={socials.medium}>
+            <img src={medium} alt="medium" />
           </a>
         </div>
-
       </div>
 
       {isPopup && <CoomingSoon closePopup={closePopup} />}

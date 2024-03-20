@@ -1,17 +1,21 @@
-import React from "react";
+import React from 'react'
 import "./style.css";
-import shield from "../../assets/ULTRA_shield_transparent.png";
+import Rocket from "../../assets/Rocket.svg";
+import Lottie from "react-lottie-player";
+import RocketAnim from "../../assets/animation/Rocket-1.json";
 
 export default function FlyRocket() {
   return (
-    <div className="FlyRocket mountAnimBelow" id="Features">
-      <div className="firstLine">ULTRA SHIELD</div>
-      <div className="secondLine">
-        Features
-        <span>
-          <img src={shield} alt="shield" />
-        </span>
-      </div>
+    <div className='FlyRocket mountAnimBelow'>
+        <div className='firstLine'>with DexOrdi</div>
+        <div className='secondLine'>you can 
+            <span>
+            <img src={Rocket} alt="Rocket" />
+            </span>
+        </div>
+
+{/* <Lottie loop animationData={RocketAnim} play className="anim" /> */}
+
     </div>
-  );
+  )
 }

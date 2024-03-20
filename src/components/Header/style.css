@@ -13,7 +13,6 @@ header.header .bg{
    display: block;
    object-fit: cover;
    z-index: -1;
-   mix-blend-mode: luminosity;
 }
 
 header.header .content {
@@ -27,17 +26,17 @@ header.header .content {
 
 header.header .content h1{
     color: #FFF;
-    font-size: max(min(5vw, 70px), 1.6rem);
+    font-size: max(min(7vw, 134px), 2.5rem);
     font-style: normal;
     font-weight: 700;
-    line-height: 1;
+    line-height: normal;
     margin-bottom: 1rem;
 }
 
 header.header .content h1 span{
-    font-size: max(min(7vw, 134px), 2.5rem);
+    font-size: max(min(5vw, 70px), 1.6rem);
     line-height: 1;
-    color: #F35E0A;
+    color: #9747FF;
 }
 
 header.header .content p{
@@ -51,16 +50,10 @@ header.header .content p{
 
 }
 
-header.header .content p span{
-    color: #fff;
-    font-weight: 600;
-}
-
 header.header .content img.headerImage{
     display: block;
     width: 40%;
-    max-width: 480px;  
-    animation: moveUpDownHeader 3s ease-in-out infinite;
+    max-width: 480px;    
 }
 
 header.header .content .headerAnim{
@@ -94,16 +87,6 @@ header.header .content .logo img{
    width: auto;
    height: 1.5rem;
 }
-
-@keyframes moveUpDownHeader {
-    0%,
-    100% {
-      transform: translate(-5%, -0%) rotate(0deg);
-    }
-    50% {
-      transform: translate(-0%, -3%) rotate(-1deg);
-    }
-  }
 
 @media (max-width:750px) {
     header.header {
